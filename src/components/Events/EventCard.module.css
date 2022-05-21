@@ -1,0 +1,76 @@
+.card_wrapper{
+    background-color: rgb(254, 242, 233);
+    width: 450px;
+    border: 3px solid rgb(252, 211, 125);
+    border-radius: 15px;
+}
+.card_div{
+    padding: 20px 15px 10px 30px;
+}
+.h2{
+    color: #000 !important;
+    font-size: 26px;
+    text-decoration: none;
+}
+.header_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 55px;
+    padding-left: 30px;
+    border-bottom: 3px solid rgb(252, 211, 125);
+}
+.section_value{
+    padding-left: 10px;
+}
+.section_value_description{
+    composes: section_value;
+    height: 100%;
+}
+.section_date{
+    margin-bottom: 20px;
+}
+.section_date::before{
+    content: url('../../UI/icons/eventDate.png');
+}
+.section_description{
+    margin: 25px 0 10px 0;
+}
+.section_description::before{
+    content: url('../../UI//icons/descritpion.png');
+}
+.admin_container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.admin_textarea{
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    margin-top: 8px;
+    padding: 7px;
+    border-radius: 10px;
+}
+.admin_button{
+    margin: 12px 0;
+    padding: 3px 4px;
+    font-size: 18px;
+    background-color: rgb(252, 211, 125);
+    border-radius: 8px;
+}
+.admin_button:disabled{
+    background-color: rgb(254, 242, 233);
+}
+.status_img{
+    padding-right: 20px;
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+}
+.moder_label{
+    font-weight: 700;
+}
+.rework_button{
+    margin-right: 10px;
+}

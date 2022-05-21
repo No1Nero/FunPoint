@@ -1,0 +1,74 @@
+.img_wrapper{
+    padding: 10px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid rgb(252, 211, 125);
+    height: 9.8vh;
+    background-color: rgb(254, 242, 233);
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 650px;
+    padding: 10px 50px 10px 0;
+}
+.img{
+    width: 225px;
+    height: 65px;
+    border: 3px solid rgb(252, 211, 125);
+    border-radius: 15px;
+}
+.menu_link{
+    text-decoration: none;
+    font-size: 23px;
+    color: #000;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+.menu_link:hover{
+    color: orange;
+}
+.auth_form{
+    width: 100px;
+    text-align: center;
+}
+.auth_button{
+    font-size: 22px;
+    padding: 5px;
+    border: 2px solid rgb(252, 211, 125);
+    border-radius: 7px;
+    background-color: rgb(254, 242, 233);
+    cursor: pointer;
+}
+.auth_button:active{
+    background-color: rgb(252, 211, 125);
+}
+.div_image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+}
+.navlink_img{
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+.navlink_img:hover{
+    color: orange;
+}
+.profile_img{
+    width: 60px;
+    border-radius: 50%;
+}
+.profile_label{
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}

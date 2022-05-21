@@ -1,0 +1,11 @@
+.wrapper{
+    display: grid;
+    background: url('../UI/backgrounds/background_events.png') fixed top left no-repeat;
+    grid-template-rows: 1fr;
+    grid-template-columns: 60% 40%;
+    min-height: 89.9vh;
+}
+.right_filter{
+    border-radius: 20px 0 0 20px;
+    margin-left: 30px;
+}

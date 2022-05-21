@@ -1,0 +1,69 @@
+.card_wrapper{
+    background-color: rgb(254, 242, 233);
+    width: 440px;
+    border: 3px solid rgb(252, 211, 125);
+    border-radius: 15px;
+}
+.header_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 55px;
+    padding-left: 30px;
+    border-bottom: 3px solid rgb(252, 211, 125);
+}
+.h2{
+    font-size: 26px;
+    text-decoration: none;
+    font-weight: 400;
+    display: inline;
+}
+.card_div{
+    padding: 0 15px 10px 30px;
+}
+.section_value_description{
+    padding-left: 10px;
+    display: inline-block;
+    height: 100%;
+}
+.section_description{
+    margin: 25px 0 10px 0;
+}
+.section_description::before{
+    content: url('../../UI//icons/descritpion.png');
+}
+.admin_container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.admin_textarea{
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    margin-top: 8px;
+    padding: 7px;
+    border-radius: 10px;
+}
+.admin_button{
+    margin: 12px 0;
+    padding: 3px 4px;
+    font-size: 18px;
+    background-color: rgb(252, 211, 125);
+    border-radius: 8px;
+}
+.admin_button:disabled{
+    background-color: rgb(254, 242, 233);
+}
+.status_img{
+    padding-right: 20px;
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+}
+.moder_label{
+    font-weight: 700;
+}
+.rework_button{
+    margin-right: 10px;
+}

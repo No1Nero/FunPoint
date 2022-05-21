@@ -1,0 +1,14 @@
+.wrapper{
+    height: 89.9vh;
+    background: url('../UI/backgrounds/background_oneEvent.png') fixed center center no-repeat;
+}
+.container{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+}
+.access_denied_container{
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
+}

@@ -1,0 +1,83 @@
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 89.9vh;
+    background: url('../UI/backgrounds/background_oneEvent.png') fixed center center no-repeat;
+}
+.container{
+    border: 4px solid rgb(252, 211, 125);
+    border-radius: 15px;
+    width: 70%;
+    background-color: rgb(254, 242, 233);
+}
+.header_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    padding: 0 20px 0 30px;
+    border-bottom: 3px solid rgb(252, 211, 125);
+}
+.h2{
+    font-size: 34px;
+}
+.fav_adder{
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+}
+.card_div{
+    padding: 5px 15px 15px 30px;
+}
+.label{
+    font-weight: 700;
+}
+.section{
+    margin: 25px 0;
+    font-size: 22px;
+}
+.section_value{
+    padding-left: 20px;
+}
+.section_value_description{
+    composes: section_value;
+    display: inline-block;
+    height: 100%;
+}
+.section_address{
+    composes: section;
+}
+.section_address::before{
+    content: url('../UI/icons/address.png');
+}
+.section_price{
+    composes: section;
+}
+.section_price::before{
+    content: url('../UI/icons/price.png');
+}
+.section_date{
+    composes: section;
+}
+.section_date::before{
+    content: url('../UI/icons/eventDate.png');
+}
+.section_time{
+    composes: section;
+}
+.section_time::before{
+    content: url('../UI/icons/eventTime.png');
+}
+.section_contact{
+    composes: section;
+}
+.section_contact::before{
+    content: url('../UI/icons/phoneNumber.png');
+}
+.section_description{
+    composes: section;
+}
+.section_description::before{
+    content: url('../UI//icons/descritpion.png');
+}
