@@ -1,12 +1,12 @@
 import axios from "axios";
 
 const fetchCategories = ({setState}) => {
-    axios.get('https://funpoint-app.herokuapp.com/android/categories')
+    axios.get('https://funpoint-server.herokuapp.com/android/categories')
     .then(({data}) => setState(data));
 };
 
 const fetchAllEvents = ({setState}) => {
-    axios.get('https://funpoint-app.herokuapp.com/android')
+    axios.get('https://funpoint-server.herokuapp.com/android')
     .then(({data}) => setState(data));
 };
 
@@ -18,7 +18,7 @@ const fetchEvent = ({id, setState, token}) => {
         authToken = `Bearer_${token}`;
     }
     
-    axios.get(`https://funpoint-app.herokuapp.com/android/event/${id}`, {
+    axios.get(`https://funpoint-server.herokuapp.com/android/event/${id}`, {
         headers: {
             "Authorization": authToken,
         },
@@ -27,7 +27,7 @@ const fetchEvent = ({id, setState, token}) => {
 };
 
 const fetchAddedEvents = ({token, setState}) => {
-    axios.get('https://funpoint-app.herokuapp.com/user/get_added_events', {
+    axios.get('https://funpoint-server.herokuapp.com/user/get_added_events', {
         headers: {
             "Authorization": `Bearer_${token}`,
         },
@@ -35,7 +35,7 @@ const fetchAddedEvents = ({token, setState}) => {
 };
 
 const fetchAddedCategories = ({token, setState}) => {
-    axios.get('https://funpoint-app.herokuapp.com/user/get_added_categories', {
+    axios.get('https://funpoint-server.herokuapp.com/user/get_added_categories', {
         headers: {
             "Authorization": `Bearer_${token}`,
         },
@@ -43,7 +43,7 @@ const fetchAddedCategories = ({token, setState}) => {
 };
 
 const fetchFavourite = ({token, setState}) => {
-    axios.get('https://funpoint-app.herokuapp.com/user/get_favourite', {
+    axios.get('https://funpoint-server.herokuapp.com/user/get_favourite', {
         headers: {
             "Authorization": `Bearer_${token}`,
         },
@@ -51,7 +51,7 @@ const fetchFavourite = ({token, setState}) => {
 };
 
 const fetchAdminEvents = ({token, setState}) => {
-    axios.get('https://funpoint-app.herokuapp.com/admin/events', {
+    axios.get('https://funpoint-server.herokuapp.com/admin/events', {
         headers: {
             "Authorization": `Bearer_${token}`,
         },
@@ -59,7 +59,7 @@ const fetchAdminEvents = ({token, setState}) => {
 };
 
 const fetchAdminCategories = ({token, setState}) => {
-    axios.get('https://funpoint-app.herokuapp.com/admin/categories', {
+    axios.get('https://funpoint-server.herokuapp.com/admin/categories', {
         headers: {
             "Authorization": `Bearer_${token}`,
         },
@@ -71,12 +71,12 @@ const fetchAdminCategories = ({token, setState}) => {
 
 
 const fetchCategoryEvents = ({categoryId, setState}) => {
-    axios.post('https://funpoint-app.herokuapp.com/android/category', {categoryId})
+    axios.post('https://funpoint-server.herokuapp.com/android/category', {categoryId})
     .then(({data}) => setState(data));
 };
 
 const addEvent = ({event, setStatus, token}) => {
-    fetch('https://funpoint-app.herokuapp.com/add/event', {
+    fetch('https://funpoint-server.herokuapp.com/add/event', {
         method: 'POST',
         headers: {
             "Content-Type": "application/json",
@@ -87,7 +87,7 @@ const addEvent = ({event, setStatus, token}) => {
 };
 
 const addCategory = ({category, setStatus, token}) => {
-    fetch('https://funpoint-app.herokuapp.com/add/category', {
+    fetch('https://funpoint-server.herokuapp.com/add/category', {
         method: 'POST',
         headers: {
             "Content-Type": "application/json",
@@ -98,7 +98,7 @@ const addCategory = ({category, setStatus, token}) => {
 };
 
 const addEventToFavourite = ({token, idEvent, setState}) => {
-    fetch('https://funpoint-app.herokuapp.com/user/add_to_favourite', {
+    fetch('https://funpoint-server.herokuapp.com/user/add_to_favourite', {
         method: 'POST',
         mode: 'cors',
         headers: {
@@ -111,7 +111,7 @@ const addEventToFavourite = ({token, idEvent, setState}) => {
 };
 
 const moderateEvent = ({token, adminAnswer}) => {
-    fetch('https://funpoint-app.herokuapp.com/admin/moderate_event', {
+    fetch('https://funpoint-server.herokuapp.com/admin/moderate_event', {
         method: 'POST',
         mode: 'cors',
         headers: {
@@ -123,7 +123,7 @@ const moderateEvent = ({token, adminAnswer}) => {
 };
 
 const moderateCategory = ({token, adminAnswer}) => {
-    fetch('https://funpoint-app.herokuapp.com/admin/moderate_category', {
+    fetch('https://funpoint-server.herokuapp.com/admin/moderate_category', {
         method: 'POST',
         mode: 'cors',
         headers: {
@@ -135,7 +135,7 @@ const moderateCategory = ({token, adminAnswer}) => {
 };
 
 const reworkEvent = ({token, reworkedEvent}) => {
-    fetch('https://funpoint-app.herokuapp.com/user/rework_event', {
+    fetch('https://funpoint-server.herokuapp.com/user/rework_event', {
         method: 'POST',
         mode: 'cors',
         headers: {
@@ -147,7 +147,7 @@ const reworkEvent = ({token, reworkedEvent}) => {
 };
 
 const reworkCategory = ({token, reworkedCategory}) => {
-    fetch('https://funpoint-app.herokuapp.com/user/rework_category', {
+    fetch('https://funpoint-server.herokuapp.com/user/rework_category', {
         method: 'POST',
         mode: 'cors',
         headers: {
@@ -163,7 +163,7 @@ const reworkCategory = ({token, reworkedCategory}) => {
 
 
 const removeEventFromFavourite = ({token, idEvent, setState}) => {
-    fetch('https://funpoint-app.herokuapp.com/user/delete_from_fav', {
+    fetch('https://funpoint-server.herokuapp.com/user/delete_from_fav', {
         method: 'DELETE',
         headers: {
             "Content-Type": "application/json",
