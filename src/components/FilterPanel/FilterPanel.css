@@ -20,7 +20,7 @@
     font-weight: 700;
 }
 .filter_wrapper{
-    background: url('../../UI/backgrounds/background_filter.png') center center no-repeat;
+    background: url('../../UI/backgrounds/background_filter.png') top center no-repeat;
     border-radius: 20px;
     border: 4px solid rgb(252, 211, 125);
     width: 400px;
