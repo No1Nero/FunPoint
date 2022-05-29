@@ -1,9 +1,9 @@
 .wrapper{
     display: grid;
-    background: url('../UI/backgrounds/background_events.png') fixed top left no-repeat;
+    background: url('../UI/backgrounds/background_events.png') fixed center center no-repeat;
     grid-template-rows: 1fr;
     grid-template-columns: 60% 40%;
-    min-height: 89.9vh;
+    min-height: 88.7vh;
 }
 .right_filter{
     border-radius: 20px 0 0 20px;

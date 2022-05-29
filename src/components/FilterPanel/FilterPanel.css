@@ -7,7 +7,7 @@
     padding: 20px 0 20px 15px;
     line-height: 15px;
     border-radius: 15px;
-    width: 300px;
+    width: 285px;
     font-size: 20px;
 }
 .filter_all{
@@ -15,15 +15,15 @@
     padding: 20px 0 20px 15px;
     line-height: 15px;
     border-radius: 15px;
-    width: 300px;
+    width: 285px;
     font-size: 24px;
     font-weight: 700;
 }
 .filter_wrapper{
-    background: url('../../UI/backgrounds/background_filter.png') left top no-repeat;
+    background: url('../../UI/backgrounds/background_filter.png') center center no-repeat;
     border-radius: 20px;
     border: 4px solid rgb(252, 211, 125);
-    width: 88%;
+    width: 400px;
     margin-top: 30px;
     padding-top: 5px;
 }

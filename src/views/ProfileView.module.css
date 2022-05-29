@@ -1,5 +1,5 @@
 .wrapper{
-    min-height: 89.9vh;
+    min-height: 88.7vh;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(2, 1fr);
