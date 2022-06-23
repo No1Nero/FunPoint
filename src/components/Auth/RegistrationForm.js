@@ -71,23 +71,23 @@ export default function RegistrationForm() {
     return (
         <form onSubmit={handleSubmit} className={s.form}>
             <div className={s.header_container}>
-                <h2>Регистрация пользователя</h2>
+                <h2>Реєстрація користувача</h2>
             </div>
             <div className={s.div_content}>
                 <section className={s.section}>
-                    <label className={s.label}>Имя пользователя</label>
+                    <label className={s.label}>Нік користувача</label>
                     <input className={s.input} type="text" onChange={handleChange} name='userName' value={userName}></input>
                 </section>
                 <section className={s.section}>
-                    <label className={s.label}>Имя</label>
+                    <label className={s.label}>Ім'я</label>
                     <input className={s.input} type="text" onChange={handleChange} name='firstName' value={firstName}></input>
                 </section>
                 <section className={s.section}>
-                    <label className={s.label}>Фамилия</label>
+                    <label className={s.label}>Прізвище</label>
                     <input className={s.input} type="text" onChange={handleChange} name='lastName' value={lastName}></input>
                 </section>
                 <section className={s.section}>
-                    <label className={s.label}>Почта</label>
+                    <label className={s.label}>Пошта</label>
                     <input className={s.input} type="email" onChange={handleChange} name='email' value={email}></input>
                 </section>
                 <section className={s.section}>
@@ -97,7 +97,7 @@ export default function RegistrationForm() {
                 {error && <p className={s.error}>{error}</p>}
             </div>
             <div className={s.buttons}>
-                <button disabled={!userName || !firstName || !lastName || !email || !password} className={s.button} type="submit">Зарегистрироваться</button>
+                <button disabled={!userName || !firstName || !lastName || !email || !password} className={s.button} type="submit">Зареєструватися</button>
             </div>
         </form>
     );

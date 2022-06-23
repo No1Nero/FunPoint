@@ -22,8 +22,8 @@ export default function AuthView() {
     return (
         <div className={s.wrapper}>
             <div className={s.div_buttons}>
-                <button className={s.left_button} disabled={toggler} onClick={handleToggler} type='button'>Регистрация</button>
-                <button className={s.right_button} disabled={!toggler} onClick={handleToggler} type="button">Авторизация</button>
+                <button className={s.left_button} disabled={toggler} onClick={handleToggler} type='button'>Реєстрація</button>
+                <button className={s.right_button} disabled={!toggler} onClick={handleToggler} type="button">Авторизація</button>
             </div>
             <div className={s.div_content}>
                 {toggler ? <RegistrationForm /> : <AuthrizationForm />}

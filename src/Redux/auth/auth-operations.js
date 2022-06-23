@@ -15,7 +15,7 @@ const login = credentials => async dispatch => {
         const response = await axios.post('https://funpoint-server.herokuapp.com/android/login', credentials);
         dispatch(authActions.loginSuccess(response.data));
     } catch(error) {
-        dispatch(authActions.loginError('Неверный логин или пароль'));
+        dispatch(authActions.loginError('Неправильний логін або пароль'));
     }
 };
 

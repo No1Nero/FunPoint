@@ -50,11 +50,11 @@ export default function AuthrizationForm() {
     return (
         <form onSubmit={handleSubmit} className={s.form}>
             <div className={s.header_container}>
-                <h2>Авторизация пользователя</h2>
+                <h2>Авторизація користувача</h2>
             </div>
             <div className={s.div_content}>
                 <section className={s.section}>
-                    <label className={s.label}>Имя пользователя</label>
+                    <label className={s.label}>Ім'я користувача</label>
                     <input className={s.input} type="text" onChange={handleChange} name='userName' value={userName}></input>
                 </section>
                 <section className={s.section}>
@@ -64,7 +64,7 @@ export default function AuthrizationForm() {
                 {error && <p className={s.error}>{error}</p>}
             </div>
             <div className={s.buttons}>
-                <button disabled={!userName || !password} className={s.button} type="submit">Войти</button>
+                <button disabled={!userName || !password} className={s.button} type="submit">Увійти</button>
             </div>
         </form>
     );

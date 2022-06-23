@@ -51,23 +51,23 @@ export default function CategoryAdder({responseCategory}) {
         <div>
             <div className={s.wrapper}>
                 <div className={s.header_container}>
-                    <h2 className={s.header}>Добавление категории</h2>
+                    <h2 className={s.header}>Додавання категорії</h2>
                 </div>
                 <form onSubmit={handleSubmit}>
                     <div className={s.form}>
                         <section className={s.section}>
-                            <label className={s.label}>Название категории</label>
+                            <label className={s.label}>Назва категорії</label>
                             <input className={s.input} type="text" name='categoryTitle' value={categoryTitle} onChange={handleChange}></input>
                         </section>
                         <section className={s.section_description}>
-                            <label className={s.label_description}>Описание</label>
+                            <label className={s.label_description}>Опис</label>
                             <textarea className={s.input_description} type="text" name='categoryDescription' value={categoryDescription} onChange={handleChange}></textarea>
                         </section>
-                        <p className={s.paragraf}> - обязательное поле для заполения</p>
+                        <p className={s.paragraf}> - обов'язкове поле для заповнення</p>
                     </div>
                     <div className={s.buttons}>
-                        <button className={s.button} type="button" onClick={clearAllFields}>Очистить</button>
-                        <button disabled={!categoryTitle} className={s.button} type="submit">Добавить</button>
+                        <button className={s.button} type="button" onClick={clearAllFields}>Очистити</button>
+                        <button disabled={!categoryTitle} className={s.button} type="submit">Додати</button>
                     </div>
                 </form>
             </div>

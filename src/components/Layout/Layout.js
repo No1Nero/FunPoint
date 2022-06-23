@@ -16,9 +16,9 @@ export default function Layout() {
                     <NavLink to='/'><img className={s.img} alt='#' src={logo} /></NavLink>
                 </div>
                 <div className={s.navigation}>
-                    <NavLink className={s.menu_link} to='/'>Главная</NavLink>
-                    <NavLink className={s.menu_link} to='/events'>События</NavLink>
-                    <NavLink className={s.menu_link} to='/myevents'>Мои события</NavLink>
+                    <NavLink className={s.menu_link} to='/'>Головна</NavLink>
+                    <NavLink className={s.menu_link} to='/events'>Події</NavLink>
+                    <NavLink className={s.menu_link} to='/myevents'>Мої події</NavLink>
                     {token ? 
                     <NavLink className={s.navlink_img} to='/profile'>
                         <div className={s.div_image}>
@@ -27,7 +27,7 @@ export default function Layout() {
                         </div>
                     </NavLink> :
                     <form className={s.auth_form} action='/auth'>
-                        <button className={s.auth_button}>Войти</button>
+                        <button className={s.auth_button}>Увійти</button>
                     </form>}
                 </div>
             </header>

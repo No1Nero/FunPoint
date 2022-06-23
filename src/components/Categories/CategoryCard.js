@@ -73,12 +73,12 @@ export default function CategoryCard({title, description, isAdmin, id, categoryI
                     <div className={s.card_div}>
                         {adminMessageToggler ? 
                             <>
-                            <label className={s.moder_label}>Сообщение модерации: </label>
+                            <label className={s.moder_label}>Повідомлення модерації: </label>
                             <label>{moderatingMessage}</label>
                             </> : 
                             <>
                             <section className={s.section_description}>
-                                <label>Описание: </label>
+                                <label>Опис: </label>
                                 <label className={s.section_value_description}>{description}</label>
                             </section>
                             {isAdmin &&
@@ -86,22 +86,22 @@ export default function CategoryCard({title, description, isAdmin, id, categoryI
                                     <div className={s.admin_container}>
                                         <section>
                                             <input onChange={handleChange} name="adminAnswer" type="radio" value="ACCEPTED"></input>
-                                            <label>Опубликовать</label>
+                                            <label>Опублікувати</label>
                                         </section>
                                         <section>
                                             <input onChange={handleChange} name="adminAnswer" type="radio" value="REWORK"></input>
-                                            <label>Редактировать</label>
+                                            <label>Редагувати</label>
                                         </section>
                                         <section>
                                             <input onChange={handleChange} name="adminAnswer" type="radio" value="DECLINED"></input>
-                                            <label>Отменить</label>
+                                            <label>Скасувати</label>
                                         </section>
                                     </div>
                                     {adminAnswer === 'REWORK' || adminAnswer === 'DECLINED' ? 
                                         <textarea className={s.admin_textarea} onChange={handleChange} name="adminDescription" value={adminDescription}></textarea> : 
                                         <></>
                                     }
-                                    <button className={s.admin_button} disabled={!adminAnswer} onClick={handleSubmit} type="button">Отправить</button>
+                                    <button className={s.admin_button} disabled={!adminAnswer} onClick={handleSubmit} type="button">Відправити</button>
                                 </div>
                             }
                             </>

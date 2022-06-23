@@ -27,16 +27,16 @@ export default function UserEventsView() {
                 </div>
                 <div>
                     <div className={s.button_wrapper}>
-                        <button className={s.button} onClick={changeToggler}>{toggler ? "Перейти к категориям" : "Перейти к событиям"}</button>
+                        <button className={s.button} onClick={changeToggler}>{toggler ? "Перейти до категорій" : "Перейти до подій"}</button>
                     </div>
                     {toggler ? 
-                        <EventList categoryStatus={categoryStatus} categoryTitle="Добавленные события" categoryId={77777} eventPath="/myevents/"/> : 
-                        <CategoryList categoryId={99999} headerTitle="Добавленные категории"/>
+                        <EventList categoryStatus={categoryStatus} categoryTitle="Додані події" categoryId={77777} eventPath="/myevents/"/> : 
+                        <CategoryList categoryId={99999} headerTitle="Додані категорії"/>
                     }
                 </div>
             </div> : 
             <div className={s.nouser_container}>
-                <NoUser message="Зарегистрируйтесь или авторизуйтесь, чтоб получить возможность добавлять собственные события и категории."/>
+                <NoUser message="Зареєструйтеся або авторизуйтеся для можливості додавати власні події та категорії."/>
             </div>}
         </div>
     );

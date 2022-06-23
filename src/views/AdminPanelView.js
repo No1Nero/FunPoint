@@ -13,14 +13,14 @@ export default function AdminPanelView() {
             {isAdmin ?
             <div className={s.container}>
                 <div>
-                    <EventList isAdmin={isAdmin} categoryTitle="Ожидающие события" categoryId={66666} eventPath="/adminpanel/"/>
+                    <EventList isAdmin={isAdmin} categoryTitle="Очікуючі події" categoryId={66666} eventPath="/adminpanel/"/>
                 </div>
                 <div>
-                    <CategoryList isAdmin={isAdmin} categoryId={88888} headerTitle="Ожидающие категории"/>
+                    <CategoryList isAdmin={isAdmin} categoryId={88888} headerTitle="Очікуючі категорії"/>
                 </div>
             </div> : 
             <div className={s.access_denied_container}>
-                <NoUser message="Вы не имеете доступа к этой странице" />
+                <NoUser message="Ві не маєте доступу до даної сторінки" />
             </div>
             }
         </div>

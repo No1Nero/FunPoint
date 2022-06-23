@@ -90,16 +90,16 @@ export default function ReworkEventForm({categoryStatus, id, onAddress, onPrice,
         <div className={s.wrapper}>
         <div className={s.header_container}>
             <button className={s.rework_button} onClick={changeReworkToggler}><img alt="#" src={rework_button} /></button>
-            <h1 className={s.header}>Редактирование события</h1>
+            <h1 className={s.header}>Редагування події</h1>
         </div>
         <form onSubmit={handleSubmit}>
             <div  className={s.form}>
                 <section className={s.section}>
-                    <label className={s.label}>Название события</label>
+                    <label className={s.label}>Назва події</label>
                     <input className={s.input} onChange={handleChange} type='text' value={name} name='name'></input>
                 </section>
                 <section className={s.section}>
-                    <label className={s.label}>Категория события</label>
+                    <label className={s.label}>Категорія події</label>
                     <select  className={s.input_category} name='category' value={category} onChange={handleChange}>
                         {categories.map(({id_category, title}) => {
                             return (
@@ -111,7 +111,7 @@ export default function ReworkEventForm({categoryStatus, id, onAddress, onPrice,
                     </select>
                 </section>
                 <section className={s.section}>
-                    <label className={s.label}>Адрес</label>
+                    <label className={s.label}>Адреса</label>
                     <input className={s.input} onChange={handleChange} type='text' value={address} name='address'></input>
                 </section>
                 <section className={s.section}>
@@ -119,11 +119,11 @@ export default function ReworkEventForm({categoryStatus, id, onAddress, onPrice,
                     <input className={s.input} onChange={handleChange} type='date' value={date} name='date' ></input>
                 </section>
                 <section className={s.section}>
-                    <label className={s.label}>Время</label>
+                    <label className={s.label}>Час</label>
                     <input className={s.input} onChange={handleChange} type='time' value={time} name='time'></input>
                 </section>
                 <section className={s.section}>
-                    <label className={s.label}>Цена (грн)</label>
+                    <label className={s.label}>Ціна (грн)</label>
                     <input className={s.input_price} onChange={handleChange} type='number' value={price} name='price'></input>
                 </section>
                 <section className={s.section}>
@@ -131,13 +131,13 @@ export default function ReworkEventForm({categoryStatus, id, onAddress, onPrice,
                     <PhoneInput className={s.phone} international value={phoneNumber} onChange={setPhoneNumber} defaultCountry="UA" />
                 </section>
                 <section className={s.section_description}>
-                    <label className={s.label_description}>Описание</label>
+                    <label className={s.label_description}>Опис</label>
                     <textarea className={s.input_description} onChange={handleChange} type='text' value={description} name='description'></textarea>
                 </section>
-                <p className={s.paragraf}> - обязательное поле для заполения</p>
+                <p className={s.paragraf}> - обов'язкове поле для заповнення</p>
             </div>
             <div className={s.buttons}>
-                <button disabled={!name || !category || !address || !date || !time || !price} className={s.button} type='submit'>Внести изменения</button>
+                <button disabled={!name || !category || !address || !date || !time || !price} className={s.button} type='submit'>Внести зміни</button>
             </div>
         </form>
     </div>

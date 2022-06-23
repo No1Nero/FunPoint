@@ -40,11 +40,11 @@ export default function OneEventView() {
                 </div>
                 <div className={s.card_div}>
                     <section className={s.section_address}>
-                        <label className={s.label}>Адрес: </label>
+                        <label className={s.label}>Адреса: </label>
                         <label className={s.section_value}>{event.address}</label>
                     </section>
                     <section className={s.section_price}>
-                        <label className={s.label}> Цена: </label>
+                        <label className={s.label}> Ціна: </label>
                         <label className={s.section_value}>{event.price} грн</label>
                     </section>
                     <section className={s.section_date}>
@@ -52,7 +52,7 @@ export default function OneEventView() {
                         <label className={s.section_value}>{event.eventDate}</label>
                     </section>
                     <section className={s.section_time}>
-                        <label className={s.label}>Время: </label>
+                        <label className={s.label}>Час: </label>
                         <label className={s.section_value}>{event.eventTime}</label>
                     </section>
                     <section className={s.section_contact}>
@@ -60,7 +60,7 @@ export default function OneEventView() {
                         <label className={s.section_value}>{event.phoneNumber}</label>
                     </section>
                     <section className={s.section_description}>
-                        <label className={s.label}>Описание: </label>
+                        <label className={s.label}>Опис: </label>
                         <label className={s.section_value_description}>{event.description}</label>
                     </section>
                 </div>

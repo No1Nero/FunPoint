@@ -46,22 +46,22 @@ export default function ReworkCategoryForm({id, onTitle, onDescription, changeRe
         <div className={s.wrapper}>
             <div className={s.header_container}>
                 <button className={s.rework_button} onClick={changeReworkToggler}><img alt="#" src={rework_button} /></button>
-                <h2 className={s.header}>Редактирование категории</h2>
+                <h2 className={s.header}>Редагування категорії</h2>
             </div>
             <form onSubmit={handleSubmit}>
                 <div className={s.form}>
                     <section className={s.section}>
-                        <label className={s.label}>Название категории</label>
+                        <label className={s.label}>Назва категорії</label>
                         <input className={s.input} type="text" name='categoryTitle' value={categoryTitle} onChange={handleChange}></input>
                     </section>
                     <section className={s.section_description}>
-                        <label className={s.label_description}>Описание</label>
+                        <label className={s.label_description}>Опис</label>
                         <textarea className={s.input_description} type="text" name='categoryDescription' value={categoryDescription} onChange={handleChange}></textarea>
                     </section>
-                    <p className={s.paragraf}> - обязательное поле для заполения</p>
+                    <p className={s.paragraf}> - обов'язкове поле для заповнення</p>
                 </div>
                 <div className={s.buttons}>
-                    <button disabled={!categoryTitle} className={s.button} type="submit">Внести изменения</button>
+                    <button disabled={!categoryTitle} className={s.button} type="submit">Внести зміни</button>
                 </div>
             </form>
         </div>
