@@ -36,7 +36,7 @@ export default function FilterPanel({idDrilling}) {
         <div className="filter_wrapper">
             <h2 className="filter_header">Категорії подій</h2>
             <div className="filter_menu">
-                <section name="Усі події" title="Усі події на сайті" className={classNames('filter_all', chosen === id ? 'chosen' : null)} key={id} onClick={() => handleAllClick(id)}>усі події</section>
+                <section name="Усі події" title="Усі події на сайті" className={classNames('filter_all', chosen === id ? 'chosen' : null)} key={id} onClick={() => handleAllClick(id)}>Усі події</section>
                 {categories.map(({id_category, title, description}) => 
                     <section name={title} title={description} className={classNames('filter_section', chosen === id_category ? 'chosen' : null)} key={id_category} onClick={() => handleClick(id_category)}>{title}</section>
                 )}
